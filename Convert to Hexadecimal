@@ -1,0 +1,13 @@
+def to_hex(n):
+
+  digits = '0123456789ABCDEF'
+  result = ''
+
+  while n > 0:
+    result += digits[n % 16]
+    n //= 16
+ 
+    return result[::-1]
+
+
+print(to_hex(123))
